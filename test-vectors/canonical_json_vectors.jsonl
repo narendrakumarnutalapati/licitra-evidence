@@ -1,0 +1,2 @@
+﻿{"name":"sorted_keys","input":{"b":2,"a":1},"expected":"{\"a\":1,\"b\":2}"}
+{"name":"nested_sorted","input":{"z":{"b":2,"a":1},"a":0},"expected":"{\"a\":0,\"z\":{\"a\":1,\"b\":2}}"}
