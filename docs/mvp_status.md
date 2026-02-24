@@ -372,3 +372,7 @@ These are planned for subsequent milestones.
 
 \- Git commit history establishing authorship
 
+## PostgreSQL Persistence Milestone
+
+The ledger is now persisted in PostgreSQL (schema `licitra`). Verification survives server restarts, and a dev-only tamper endpoint demonstrates integrity failure against stored records (hash mismatch detected after payload mutation).
+
