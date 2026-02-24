@@ -1,0 +1,100 @@
+﻿{
+    "org_id":  "org1",
+    "timestamp":  "2026-02-24T23:13:13.649782+00:00",
+    "verify_report":  {
+                          "org_id":  "org1",
+                          "ok":  false,
+                          "count":  10,
+                          "bad_index":  9,
+                          "reason":  "prev_hash_mismatch"
+                      },
+    "events":  [
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e1",
+                       "prev_hash":  "GENESIS",
+                       "current_hash":  "2cf4a46ec9c4306df43302bf21c2cf631389488582e8c1ed5bd97409b6fd2213",
+                       "payload_cjson":  "{\"intent\":\"test\",\"seq\":1}",
+                       "created_at":  "2026-02-24 15:11:41.593191-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e2",
+                       "prev_hash":  "2cf4a46ec9c4306df43302bf21c2cf631389488582e8c1ed5bd97409b6fd2213",
+                       "current_hash":  "f7ffc658e46264e417426eca3850c62e6258c584c0c2bd251e2fbc887cbe625a",
+                       "payload_cjson":  "{\"intent\":\"test\",\"seq\":2}",
+                       "created_at":  "2026-02-24 15:11:41.607513-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e3",
+                       "prev_hash":  "f7ffc658e46264e417426eca3850c62e6258c584c0c2bd251e2fbc887cbe625a",
+                       "current_hash":  "f86c4a0e3c89fab57402d50ece3ad54cc64ddc0c5ea5d6959fe12fb240442fe5",
+                       "payload_cjson":  "{\"intent\":\"test\",\"seq\":3}",
+                       "created_at":  "2026-02-24 15:11:41.618932-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e4",
+                       "prev_hash":  "f86c4a0e3c89fab57402d50ece3ad54cc64ddc0c5ea5d6959fe12fb240442fe5",
+                       "current_hash":  "d52a5273ff26268259ec7a6e0be84b0b5565d02127551c5c4cfc176f5a9af379",
+                       "payload_cjson":  "{\"intent\":\"test\",\"seq\":4}",
+                       "created_at":  "2026-02-24 15:11:41.629271-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e5",
+                       "prev_hash":  "d52a5273ff26268259ec7a6e0be84b0b5565d02127551c5c4cfc176f5a9af379",
+                       "current_hash":  "c246a563837e0454acbb8e4d80111ea9de80b61420f91355632da576e7f579a6",
+                       "payload_cjson":  "{\"intent\":\"test\",\"seq\":5}",
+                       "created_at":  "2026-02-24 15:11:41.639524-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e6",
+                       "prev_hash":  "c246a563837e0454acbb8e4d80111ea9de80b61420f91355632da576e7f579a6",
+                       "current_hash":  "ef518040cd294aa57c2858b7c55f65b2485493c931097196e49a3dce912b6485",
+                       "payload_cjson":  "{\"intent\":\"test\",\"seq\":6}",
+                       "created_at":  "2026-02-24 15:11:41.649168-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e7",
+                       "prev_hash":  "ef518040cd294aa57c2858b7c55f65b2485493c931097196e49a3dce912b6485",
+                       "current_hash":  "af9f47e6f7836d9931828ae6e940e5af6f0471645eb98baf7bf68453478e70a5",
+                       "payload_cjson":  "{\"intent\":\"test\",\"seq\":7}",
+                       "created_at":  "2026-02-24 15:11:41.659998-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e8",
+                       "prev_hash":  "af9f47e6f7836d9931828ae6e940e5af6f0471645eb98baf7bf68453478e70a5",
+                       "current_hash":  "b35c8f532d8435def0a632b1d223061681d263f449bd14cac98b02524bdf2676",
+                       "payload_cjson":  "{\"intent\":\"test\",\"seq\":8}",
+                       "created_at":  "2026-02-24 15:11:41.670005-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e9",
+                       "prev_hash":  "b35c8f532d8435def0a632b1d223061681d263f449bd14cac98b02524bdf2676",
+                       "current_hash":  "03dd44dd1812c83ccb68789ddaae1b574a26dfb6f178f8d955f3cd9d86b9d1f5",
+                       "payload_cjson":  "{\"intent\":\"test\",\"seq\":9}",
+                       "created_at":  "2026-02-24 15:11:41.679868-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e10",
+                       "prev_hash":  "BADPREV",
+                       "current_hash":  "6cd38d7433204be4a0658762e19c48505c3e38836b3539b1c2ce8fc50f0b1e42",
+                       "payload_cjson":  "{\"intent\":\"test\",\"seq\":10}",
+                       "created_at":  "2026-02-24 15:11:41.690452-08:00"
+                   }
+               ],
+    "decision":  {
+                     "org_id":  "org1",
+                     "action":  "ROLLBACK_V0",
+                     "reason":  "prev_hash_mismatch",
+                     "restore_to_hash":  "GENESIS"
+                 },
+    "format_version":  "0.2"
+}
