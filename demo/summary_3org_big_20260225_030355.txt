@@ -1,0 +1,19 @@
+﻿Run ID: 20260225_030355
+
+orgA: orgA_20260225_030355  events=50  (clean)
+orgB: orgB_20260225_030355  events=100  (clean, exported)
+orgC: orgC_20260225_030355  events=150  (tampered at e37, exported)
+
+Pre-verify:
+  orgA ok=True count=50
+  orgB ok=True count=100
+  orgC ok=True count=150
+
+Post-verify:
+  orgA ok=True count=50
+  orgB ok=True count=100
+  orgC ok=False count=150 bad_index=36 reason=hash_mismatch
+
+Artifacts copied to licitra-evidence/demo:
+  evidence_orgB_20260225_030355_ok.(json|pdf)
+  evidence_orgC_20260225_030355_tampered.(json|pdf)
