@@ -1,18 +1,21 @@
-﻿# LICITRA Evidence Repository (Patent Pending)
+# LICITRA Evidence Repository (Patent Pending)
 
-This repository is a curated, reproducible reference package for LICITRA:
-cryptographic, tamper-evident runtime audit infrastructure for agentic AI.
+Cryptographically Verifiable Runtime Integrity for Agentic AI Systems.
 
-What is included:
-- Deterministic canonical JSON hashing reference (/reference/canonical_json.py)
-- Hash-chained audit ledger reference (/reference/ledger_reference.py)
-- Deterministic test vectors (/test-vectors)
-- Threat model + experiment plan (/docs)
-- Minimal demo notes (/demo)
+This repository contains reproducible experiments, exported evidence bundles, and supporting documentation for LICITRA.
 
-What is intentionally NOT included:
-- Production deployment, auth, customer integrations
-- Proprietary startup codebase
-- Secrets or configuration
+## What’s Included
+- `docs/` threat model, scope, and experiment methodology
+- `demo/` exported evidence bundles (JSON/PDF) used for demonstrations
+- `experiments.md` step-by-step commands to reproduce tamper detection tests
+- `proof.md` summary of results and what each artifact demonstrates
+- `how_to_run.md` instructions to run the system locally
 
-Status: MVP reference slice extracted from the private build repository.
+## Key Claims Demonstrated
+- Hash-chained semantic event integrity (tamper detection)
+- Multi-organization isolation (org1 chain independent from org2)
+- Detection of record mutation, deletion, and previous-hash corruption
+- Evidence bundles suitable for governance / audit workflows
+
+## Core Implementation
+See: https://github.com/narendrakumarnutalapati/licitra-core
