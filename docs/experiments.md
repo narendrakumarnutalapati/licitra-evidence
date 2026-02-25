@@ -63,9 +63,20 @@ Artifacts:
 demo/evidence_multi_org_org1_tampered.json  
 demo/evidence_multi_org_org2_ok.json  
 
+
 Result:
 
 Tampering one organization does not affect others.
+
+## Experiment 5 — 3-org variable scale (50/100/150) + PDF
+
+Run ID: <paste runId from script output>
+
+- orgA: 50 events (clean witness)
+- orgB: 100 events (clean, exported)
+- orgC: 150 events (tampered at e37, exported)
+- Expected: orgC verify fails with bad_index=36, orgA+orgB remain ok:true
+- Artifacts: demo/evidence_orgB_<runId>_ok.(json|pdf), demo/evidence_orgC_<runId>_tampered.(json|pdf), demo/summary_3org_big_<runId>.txt
 
 ---
 
