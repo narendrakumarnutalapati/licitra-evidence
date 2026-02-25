@@ -1,58 +1,57 @@
-\# Threat Model
+# Threat Model
 
+This document outlines the integrity threats LICITRA is designed to detect, and the assumptions under which it operates.
 
+---
 
-\## Covered Attacks
+## Covered Attacks
 
+LICITRA detects the following runtime integrity violations:
 
+- Payload modification  
+- Event replay (duplicate event_id)  
+- Event deletion  
+- Chain reordering  
+- Cross-organization contamination  
 
-\- Payload modification
+Detection mechanisms:
 
-\- Event replay
+- SHA-256 hash mismatch  
+- Previous-hash mismatch  
+- Database uniqueness constraint on (org_id, event_id)  
 
-\- Event deletion
+Any modification to historical records breaks the chain and is surfaced during verification.
 
-\- Chain reordering
+---
 
-\- Cross-org contamination
+## Not Covered
 
+LICITRA does NOT attempt to defend against:
 
+- Root database compromise  
+- Kernel-level tampering  
+- In-memory attacks  
+- Side-channel leakage  
 
-Detected via:
+These are outside the scope of an application-layer integrity primitive.
 
+---
 
+## Assumptions
 
-\- hash mismatch
+- Database storage may be writable by attackers  
+- Attackers cannot silently forge a full hash chain without detection  
 
-\- prev\_hash mismatch
+---
 
-\- unique(org\_id,event\_id)
+## Security Model
 
+LICITRA provides *after-the-fact* integrity verification.
 
+It detects historical manipulation deterministically.
 
-\## Not Covered
+It does not attempt to prevent privileged attackers.
 
+---
 
-
-\- Root DB compromise
-
-\- Kernel-level tampering
-
-\- Memory attacks
-
-\- Side-channel leakage
-
-
-
-Assumption:
-
-
-
-Database is writable but not silently forgeable without detection.
-
-
-
-LICITRA detects integrity violations after-the-fact.
-
-It does not prevent privileged attackers.
-
+LICITRA is designed as a cryptographic runtime evidence layer — not a complete security system.
