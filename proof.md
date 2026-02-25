@@ -1,66 +1,56 @@
-\# Cryptographic Proof Summary
+# Cryptographic Proof Summary
 
+LICITRA implements an append-only cryptographic hash chain per organization:
 
+```
+current_hash = SHA256(prev_hash || canonical_json(payload))
+```
 
-LICITRA implements an append-only hash chain:
+Each organization maintains an independent ledger.
 
+Verification recomputes the full chain from GENESIS and validates every link.
 
+---
 
-current\_hash = SHA256(prev\_hash || canonical\_json(payload))
+## Tampering Scenarios Detected
 
+- Payload mutation  
+- Previous-hash overwrite  
+- Deletion or reordering of events  
+- Replay attacks (duplicate event_id)  
 
+---
 
-Each organization maintains an independent chain.
+## Evidence Bundles Include
 
+- Verification report  
+- Full ordered event chain  
+- Rollback decision (when integrity fails)  
+- Timestamp  
+- SHA-256 bundle checksum  
 
+---
 
-Verification recomputes the full chain from GENESIS.
+## PDF Exports Include
 
+- Organization ID  
+- Verification status  
+- Event count  
+- First and last hashes  
+- Tail chain link proof  
+- Embedded JSON evidence  
+- Bundle checksum  
 
+---
 
-Tampering scenarios detected:
+## Reproducibility
 
+All experiments are fully reproducible using PowerShell scripts in this repository.
 
+Artifacts in the `demo/` directory correspond directly to experiments documented in `experiments.md`.
 
-\- payload mutation
+---
 
-\- prev\_hash overwrite
+LICITRA converts runtime behavior into cryptographically verifiable evidence.
 
-\- deletion / reordering
-
-\- replay (duplicate event\_id)
-
-
-
-Evidence bundles include:
-
-
-
-\- verify report
-
-\- full event chain
-
-\- rollback decision
-
-\- timestamp
-
-\- SHA256 checksum
-
-
-
-PDF exports include:
-
-
-
-\- event count
-
-\- first/last hashes
-
-\- tail chain link proof
-
-\- bundle checksum
-
-
-
-All experiments are reproducible via scripts in this repository.
-
+Any historical modification invalidates the chain and is detected deterministically.
