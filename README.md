@@ -1,4 +1,4 @@
-# LICITRA Evidence Repository
+﻿# LICITRA Evidence Repository
 
 Cryptographically Verifiable Runtime Integrity for Agentic AI Systems.
 
@@ -8,21 +8,21 @@ This repository contains reproducible experiments, exported evidence bundles, an
 
 ## Quick Start (5 Minutes)
 
-1. Run LICITRA core locally (see how_to_run.md)
+1. Run LICITRA core locally (see docs/how_to_run.md)
 2. Follow the demo walkthrough in `demo/README.md`
 3. Inspect generated JSON + PDF evidence artifacts
 
-👉 Start here: `demo/README.md`
+ðŸ‘‰ Start here: `demo/README.md`
 
 ---
 
-## What’s Included
+## Whatâ€™s Included
 
-- `docs/` — threat model, scope, and experiment methodology  
-- `demo/` — reproducible demo walkthrough + exported evidence bundles (JSON/PDF)  
-- `experiments.md` — step-by-step commands to reproduce tamper detection tests  
-- `proof.md` — summary of results and what each artifact demonstrates  
-- `how_to_run.md` — instructions to run the system locally  
+- `docs/` - threat model, scope, and experiment methodology  
+- `demo/` - reproducible demo walkthrough + exported evidence bundles (JSON/PDF)  
+- `docs/experiments.md` - step-by-step commands to reproduce tamper detection tests  
+- `docs/proof.md` - summary of results and what each artifact demonstrates  
+- `docs/how_to_run.md` - instructions to run the system locally  
 
 ---
 
@@ -75,7 +75,7 @@ Evidence Bundle Version: 0.1-evidence
 
 ---
 
-LICITRA provides cryptographic runtime integrity — not observability.
+LICITRA provides cryptographic runtime integrity - not observability.
 
 Every AI interaction becomes a chained, verifiable event.
 
