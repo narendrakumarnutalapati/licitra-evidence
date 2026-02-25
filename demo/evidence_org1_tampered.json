@@ -1,0 +1,180 @@
+﻿{
+    "org_id":  "org1",
+    "timestamp":  "2026-02-25T04:51:00.077905+00:00",
+    "verify_report":  {
+                          "org_id":  "org1",
+                          "ok":  false,
+                          "count":  20,
+                          "bad_index":  6,
+                          "reason":  "hash_mismatch"
+                      },
+    "events":  [
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e1",
+                       "prev_hash":  "GENESIS",
+                       "current_hash":  "ad286ff888d6937b71c42cb4aade291174f16f6474360121290498b0ae782ee2",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":1}",
+                       "created_at":  "2026-02-24 20:44:44.098794-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e2",
+                       "prev_hash":  "ad286ff888d6937b71c42cb4aade291174f16f6474360121290498b0ae782ee2",
+                       "current_hash":  "b3e0461c0aefdf5e0a560fae049fd1d97410e2ca8ba9000ae1728cdd0ee6b45f",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":2}",
+                       "created_at":  "2026-02-24 20:44:44.113085-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e3",
+                       "prev_hash":  "b3e0461c0aefdf5e0a560fae049fd1d97410e2ca8ba9000ae1728cdd0ee6b45f",
+                       "current_hash":  "4ddd3a48954ee954f8d8d6caa4d849c2e1341c007edf46387334b6b1bb04dc1c",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":3}",
+                       "created_at":  "2026-02-24 20:44:44.125992-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e4",
+                       "prev_hash":  "4ddd3a48954ee954f8d8d6caa4d849c2e1341c007edf46387334b6b1bb04dc1c",
+                       "current_hash":  "6212c4d56aadfe706de0567601bab26f81f77901f5f7d5ec65ce75eb086b0d34",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":4}",
+                       "created_at":  "2026-02-24 20:44:44.136715-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e5",
+                       "prev_hash":  "6212c4d56aadfe706de0567601bab26f81f77901f5f7d5ec65ce75eb086b0d34",
+                       "current_hash":  "ad322c2c26a53495ecca8da87835a8c63d90d464c283bdebfd38a8d72c1e7cb1",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":5}",
+                       "created_at":  "2026-02-24 20:44:44.150104-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e6",
+                       "prev_hash":  "ad322c2c26a53495ecca8da87835a8c63d90d464c283bdebfd38a8d72c1e7cb1",
+                       "current_hash":  "068ec7449273ab8290f3ddbcc9f84b09232a4899abb8fc8447be2ad2bc38a332",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":6}",
+                       "created_at":  "2026-02-24 20:44:44.163163-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e7",
+                       "prev_hash":  "068ec7449273ab8290f3ddbcc9f84b09232a4899abb8fc8447be2ad2bc38a332",
+                       "current_hash":  "f09c1265b864a8b9890295db00141ed30f564d99b88e32b666b5321d871025a5",
+                       "payload_cjson":  "{\"tampered\":true}",
+                       "created_at":  "2026-02-24 20:44:44.176560-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e8",
+                       "prev_hash":  "f09c1265b864a8b9890295db00141ed30f564d99b88e32b666b5321d871025a5",
+                       "current_hash":  "69f3d3bfee84a44062511b3ffb37f93eb9f613def0b438f74c6870e5e06e43bd",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":8}",
+                       "created_at":  "2026-02-24 20:44:44.186183-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e9",
+                       "prev_hash":  "69f3d3bfee84a44062511b3ffb37f93eb9f613def0b438f74c6870e5e06e43bd",
+                       "current_hash":  "38cb087cbd39b91b5d041438986b71ba5798fd5ecd6158202ed82b5678e9a0ed",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":9}",
+                       "created_at":  "2026-02-24 20:44:44.197751-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e10",
+                       "prev_hash":  "38cb087cbd39b91b5d041438986b71ba5798fd5ecd6158202ed82b5678e9a0ed",
+                       "current_hash":  "98805c8e804a861d4fa5de52c9be5e8695ede85246b078be939f0546b6161acf",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":10}",
+                       "created_at":  "2026-02-24 20:44:44.208317-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e11",
+                       "prev_hash":  "98805c8e804a861d4fa5de52c9be5e8695ede85246b078be939f0546b6161acf",
+                       "current_hash":  "886f1c847c75071461b4f76213350c7fee30f6ef5003deb36da3987750ef1972",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":11}",
+                       "created_at":  "2026-02-24 20:44:44.229312-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e12",
+                       "prev_hash":  "886f1c847c75071461b4f76213350c7fee30f6ef5003deb36da3987750ef1972",
+                       "current_hash":  "3d736962e577e0ddfb0cf886dd98d8215274a0927661f067cb4ec0b8a3e5493b",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":12}",
+                       "created_at":  "2026-02-24 20:44:44.242702-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e13",
+                       "prev_hash":  "3d736962e577e0ddfb0cf886dd98d8215274a0927661f067cb4ec0b8a3e5493b",
+                       "current_hash":  "7f8c1c2878001fdfdc4eee06d89d07f6786ed36205cebd0b01db95801e93b252",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":13}",
+                       "created_at":  "2026-02-24 20:44:44.254644-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e14",
+                       "prev_hash":  "7f8c1c2878001fdfdc4eee06d89d07f6786ed36205cebd0b01db95801e93b252",
+                       "current_hash":  "97404247f4c4c067bfbb9cd3917fb0f4c35caeed06bc9dc2cb098f4a89fcd4ca",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":14}",
+                       "created_at":  "2026-02-24 20:44:44.266503-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e15",
+                       "prev_hash":  "97404247f4c4c067bfbb9cd3917fb0f4c35caeed06bc9dc2cb098f4a89fcd4ca",
+                       "current_hash":  "8b3113f28562da518f2000b3f38f78a13536c11a8cc8ed8e7dfe1a3f10a3d989",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":15}",
+                       "created_at":  "2026-02-24 20:44:44.277384-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e16",
+                       "prev_hash":  "8b3113f28562da518f2000b3f38f78a13536c11a8cc8ed8e7dfe1a3f10a3d989",
+                       "current_hash":  "5eb976f3eb1b0710cfb2c35d6d909c6919dcec91c23ad915e746b258707f6a88",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":16}",
+                       "created_at":  "2026-02-24 20:44:44.289251-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e17",
+                       "prev_hash":  "5eb976f3eb1b0710cfb2c35d6d909c6919dcec91c23ad915e746b258707f6a88",
+                       "current_hash":  "e36077f996465ae46b4a04fc003e3eae1b8e358972d83e2aa2c0ebed1db5dfdb",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":17}",
+                       "created_at":  "2026-02-24 20:44:44.300418-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e18",
+                       "prev_hash":  "e36077f996465ae46b4a04fc003e3eae1b8e358972d83e2aa2c0ebed1db5dfdb",
+                       "current_hash":  "26ea79d42d5299aa5bb7a08d2e8d9ef7099a2d874024588d4bb3f338fc044cb0",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":18}",
+                       "created_at":  "2026-02-24 20:44:44.311970-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e19",
+                       "prev_hash":  "26ea79d42d5299aa5bb7a08d2e8d9ef7099a2d874024588d4bb3f338fc044cb0",
+                       "current_hash":  "eebac502a7939e52dd94f4acb03f8224e149623d66db839e41301177b14e2e00",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":19}",
+                       "created_at":  "2026-02-24 20:44:44.322094-08:00"
+                   },
+                   {
+                       "org_id":  "org1",
+                       "event_id":  "e20",
+                       "prev_hash":  "eebac502a7939e52dd94f4acb03f8224e149623d66db839e41301177b14e2e00",
+                       "current_hash":  "0fe8129209c999d687faefb49c9c48e75a40606fa30ee504235acb6e79d917fe",
+                       "payload_cjson":  "{\"org\":\"org1\",\"seq\":20}",
+                       "created_at":  "2026-02-24 20:44:44.331760-08:00"
+                   }
+               ],
+    "decision":  {
+                     "org_id":  "org1",
+                     "action":  "ROLLBACK_V0",
+                     "reason":  "hash_mismatch",
+                     "restore_to_hash":  "GENESIS"
+                 },
+    "format_version":  "0.2"
+}
