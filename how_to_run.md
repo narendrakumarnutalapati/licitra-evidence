@@ -1,96 +1,67 @@
-\# How to Run LICITRA Locally
+# How to Run LICITRA Locally
 
+## Requirements
 
-
-\## Requirements
-
-
-
-\- Python 3.12+
-
-\- PostgreSQL 16
-
-\- Windows PowerShell
-
-\- Git
-
-
+- Python 3.12+
+- PostgreSQL 16
+- Windows PowerShell
+- Git
 
 ---
 
-
-
-\## Setup
-
-
+## Setup
 
 ```powershell
-
 git clone https://github.com/narendrakumarnutalapati/licitra-core.git
-
 cd licitra-core
 
 python -m venv .venv
-
-.\\.venv\\Scripts\\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 
 pip install -r backend/requirements.txt
+```
 
+Create environment variables:
 
-
-Create environment:
-
-
-
-$env:DATABASE\_URL="postgresql+psycopg://licitra\_user:licitra\_pass@localhost:5432/licitra"
-
-$env:DEV\_MODE="1"
-
-
+```powershell
+$env:DATABASE_URL="postgresql+psycopg://licitra_user:licitra_pass@localhost:5432/licitra"
+$env:DEV_MODE="1"
+```
 
 Run server:
 
-
-
-python -m uvicorn backend.app.main:app
-
-
+```powershell
+python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000
+```
 
 Server runs at:
 
-
-
 http://127.0.0.1:8000
 
+---
 
+## Core Endpoints
 
-Core Endpoints
+- POST /events  
+- GET /verify/{org_id}  
+- GET /evidence/{org_id}  
+- GET /evidence/{org_id}/pdf  
 
+---
 
+## Development Only Endpoints
 
-POST /events
+- POST /dev/reset/{org_id}  
+- POST /tamper/{org_id}/{event_id}  
+- POST /tamper-prev/{org_id}/{event_id}  
+- POST /dev/delete/{org_id}/{event_id}  
 
-GET /verify/{org\_id}
+DEV endpoints require DEV_MODE=1.
 
-GET /evidence/{org\_id}
+---
 
-GET /evidence/{org\_id}/pdf
+LICITRA implements a cryptographically chained runtime ledger for agentic AI systems.
 
+Each event is canonically serialized, SHA-256 hashed, and linked to the previous event.
 
-
-DEV ONLY:
-
-
-
-POST /dev/reset/{org\_id}
-
-POST /tamper/{org\_id}/{event\_id}
-
-POST /tamper-prev/{org\_id}/{event\_id}
-
-POST /dev/delete/{org\_id}/{event\_id}
-
-
-
-DEV endpoints require DEV\_MODE=1.
-
+Any historical modification invalidates the chain and is detected during verification.
